@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS Practice</title>
+    <link rel="shortcut icon" href="images/download.png" type="image/x-icon">
+    <!-- Internal/Embedded Style -->
+    <style>
+        /* 
+        normal people use 3 type of color name :
+        name color,hex color,rgba(red,green,blue combination a = alpha/color opacity) color,
+
+        name color - color: red;
+        hex color - color: #ff0000;
+        rgba color - color: rgba(255, 0, 0 ,0.6);
+
+         */
+         /* universal selector * 
+         *{
+            text-align: center;
+        }
+        */
+        p{
+            color: red;
+            background-color: aqua;
+            width: 50%;
+            height: 50px;
+            font-size: 22px;
+            text-align: center;
+        }
+        li{
+            color: green;
+            font-weight: 700;
+            font-family: sans-serif;
+        }
+        /* to select the id # + id name #specific */
+        #specific{
+            color: black;
+            text-align: left;
+            font-size: 30px;
+        }
+        /* to select the class . + id name .specific */
+        .same_name{
+            background-color: tomato;
+            color: #fff;
+            font-size: 25px;
+        }
+        .black_bg{
+            background-color: black;
+        }
+        h4{
+            font-size: 30px;
+        }
+        span,h4{
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <!-- Internal css start -->
+
+    <p>CSS = Cascading Style Sheet</p>
+    <p>Purpose make website colorful</p>
+    <p>i am exploring CSS</p>
+    <p id="specific">Specific single element Selector in CSS - id</p>
+    <span class="same_name">The class selects all the classes with the same name</span><br><br>
+    <span class="same_name">The class selects all the classes with the same name</span><br><br>
+    <span class="same_name">The class selects all the classes with the same name</span>
+
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <h3>Different ways to apply styles</h3>
+    
+    <ol>
+        <li>Inline CSS</li>
+        <li>Internal/Embedded Style</li>
+        <li>External Style</li>
+    </ol>
+
+    <div class="black_bg">
+        <h4>Lorem ipsum dolor sit.</h4>
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing.</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, rem? Voluptate accusantium nihil nemo ipsam quod, dolores inventore praesentium nisi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis delectus, commodi vero repellendus minima ex quam quis amet nihil perferendis, repudiandae quaerat nulla atque cumque, animi eius necessitatibus accusantium quia.</p>
+
+    </div>
+<!-- Internal css end -->
+
+
+
+
+
+
+
+
+
+</body>
+</html>
